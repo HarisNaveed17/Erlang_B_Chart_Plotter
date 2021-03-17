@@ -11,12 +11,13 @@ for a=1:length(A)
  dems(a) = sum(sums);
 end
 p = num./dems;
-loglog(A,p), xlabel('Erlangs'),ylim([0.001 0.1]), 
+loglog(A,p, 'DisplayName',sprintf('C=%d', C)), xlabel('Erlangs'),ylim([0.001 0.1]), 
 xlim([0.1,100]),
 ylabel('Blocking probability')
 title('Erlang B plots')
-channel_num = sprintf('C = %d',C);
-legend(channel_num)
+legend('-DynamicLegend');
+% channel_num = sprintf('C = %d',C);
+% legend(channel_num)
 hold on
 end
 
