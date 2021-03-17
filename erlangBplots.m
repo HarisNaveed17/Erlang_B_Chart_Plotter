@@ -16,8 +16,6 @@ xlim([0.1,100]),
 ylabel('Blocking probability')
 title('Erlang B plots')
 legend('-DynamicLegend');
-% channel_num = sprintf('C = %d',C);
-% legend(channel_num)
 hold on
 end
 
