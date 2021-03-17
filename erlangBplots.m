@@ -15,6 +15,8 @@ loglog(A,p), xlabel('Erlangs'),ylim([0.001 0.1]),
 xlim([0.1,100]),
 ylabel('Blocking probability')
 title('Erlang B plots')
+channel_num = sprintf('C = %d',C);
+legend(channel_num)
 hold on
 end
 
